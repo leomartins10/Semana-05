@@ -301,15 +301,18 @@ class Professor extends Funcionário{
     }
     //Implementando o método/função da classe
     calcularSalario(){
-        console.log('O salário do professor Cris é:', this.horasDeAulaPorSemana*this.valorDaHora + this.salariobase)
+        //Imprime a mensagem no console
+        console.log(`O salário do professor ${this.nome} é:$${this.horasDeAulaPorSemana*this.valorDaHora + this.salariobase} `)
     }
 }
 
-
+//Criação do Objeto Cris da Classe Professor
 var cris = new Professor('Cristiano', '25', 10000, 'muito disciplinado', 40, 1000);
+//Chama a função calcularSalario
 cris.calcularSalario()
-
+//Criação do Objeto Leo da Classe Professor
 var leo = new Professor('Leo', '18', 500, 'to tentando', 40, 25)
+//Chama a função calcularSalario
 leo.calcularSalario()
 
 ```
